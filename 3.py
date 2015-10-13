@@ -1,4 +1,7 @@
 
+fin = open('in3.txt', 'r')
+fout = open('out3.txt', 'w')
+
 def fnd1(s):
     ls =len(s)
     i=0
@@ -230,10 +233,6 @@ m = [[1, 1],
 for i in range(len(m)):
     a11=0
 #    print(m[i][0], m[i][1], rez(m[i][0]))
-
-
-fin = open('in3.txt', 'r')
-fout = open('out3.txt', 'w')
 
 for i in fin:
     fout.write(str(rez(int(i)))+'\n')
